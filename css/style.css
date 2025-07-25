@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #0193D3;
+    --secondary-color: #ff7b00;
+    --dark-blue: #003366;
+    --light-blue: #6ECFF6;
+    --white: #FFFFFF;
+    --black: #333333;
+    --gray: #F5F5F5;
+    --dark-gray: #777777;
+    --red: #E31B23;
+    --font-primary: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--black);
+    line-height: 1.6;
+}
+
