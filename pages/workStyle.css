@@ -119,3 +119,163 @@ img {
     background-color: var(--secondary-color);
 }
 
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+}
+
+.top-bar {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 8px 0;
+    font-size: 0.9rem;
+}
+
+.top-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.donate-btn {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 4px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.donate-btn:hover {
+    background-color: #c5161d;
+    color: var(--white);
+}
+
+.language-switcher {
+    position: relative;
+    cursor: pointer;
+}
+
+.language-switcher i {
+    margin-left: 5px;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white);
+    color: var(--black);
+    width: 120px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px 0;
+    display: none;
+}
+
+.language-dropdown li {
+    padding: 5px 15px;
+}
+
+.language-dropdown li:hover {
+    background-color: var(--gray);
+}
+
+.language-switcher:hover .language-dropdown {
+    display: block;
+}
+
+/*  hamburger*/
+/* هامبرجر مينو */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 15px;
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--dark-blue);
+    transition: all 0.3s ease;
+}
+
+/* أنماط للشاشات الصغيرة */
+@media (max-width: 991px) {
+    .hamburger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 20px 20px;
+        box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 15px 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .search-icon {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .search-box {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    /* تأثيرات للهامبرجر عند الفتح */
+    .hamburger-icon.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger-icon.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-icon.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
