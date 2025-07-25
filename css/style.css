@@ -200,3 +200,56 @@ img {
 .logo img {
     height: 60px;
 }
+
+/* -------Dark Mode------ */
+/* Default light mode styles */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #36457a;
+}
+
+/* Example: Header background color */
+.header {
+    background-color: #464865;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .header {
+    background-color: #222;
+}
+
+/* Link colors */
+a {
+    color: #0193D3;
+    transition: color 0.3s;
+}
+
+body.dark-mode a {
+    color: #66ccff;
+}
+
+/* Theme toggle button styling */
+#theme-toggle {
+    position: fixed;
+    top: 0px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s;
+    color: #333;
+}
+
+body.dark-mode #theme-toggle {
+    color: #180202;
+}
+
