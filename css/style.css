@@ -668,3 +668,90 @@ body.dark-mode #theme-toggle {
     .join-button:hover {
         background-color: #0055aa;
     }
+
+        footer {
+            background-color: var(--primary-color);
+            padding: 40px 20px;
+            color: #333;
+            font-size: 14px;
+        }
+    
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+    
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+    
+        .footer-column h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #0066cc;
+        }
+    
+        .footer-column ul {
+            list-style: none;
+        }
+    
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+    
+        .footer-column ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+    
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+    
+        .donor-button {
+            display: inline-block;
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+    
+        .footer-bottom-links {
+            display: flex;
+            gap: 15px;
+        }
+    
+        .footer-bottom-links a {
+            color: #333;
+            text-decoration: none;
+        }
+    
+        .footer-bottom-links a:hover {
+            text-decoration: underline;
+        }
+    
+        .footer-mission {
+            max-width: 1200px;
+            margin: 20px auto 0;
+            padding-top: 20px;
+            font-style: italic;
+            line-height: 1.5;
+        }
