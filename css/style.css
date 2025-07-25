@@ -351,3 +351,51 @@ body.dark-mode #theme-toggle {
 }
 
 /* --------------------- */
+ .hero {
+     position: relative;
+     width: 100%;
+     height: 560px;
+     background: url('UNI513813-HP.JPG.jfif') no-repeat center center/cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 50px;
+ }
+
+ .overlay-content {
+     position: absolute;
+     text-align: left;
+     color: white;
+     background: rgba(0, 0, 0, 0.8);
+     padding: 20px;
+     max-width: 60%;
+     margin-top: 300px;
+ }
+
+ .overlay-content h1 {
+     color: var(--white);
+     font-size: 2em;
+     margin: 0 0 10px;
+ }
+
+ .overlay-content p {
+     margin: 0 0 15px;
+     font-size: 1.2em;
+     color: var(--gray);
+ }
+
+ .overlay-content button {
+     background: #009ee0;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     cursor: pointer;
+     font-size: 1em;
+     border-radius: 5px;
+ }
+
+ .overlay-content button:hover {
+     background: #007bb5;
+ }
+
+ /* -------------------------- */
